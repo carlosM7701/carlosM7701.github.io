@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Morales Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"> Carlos Morales</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo"> Carlos Morales</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Carlos Morales profile picture">
+    </div>
+    <div class="section__text">
+      <h1 class="title"> Carlos Morales</h1>
+      <p class="section__text__p2">Mechanical Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')"> Resume</button>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="section__text">
+      <h1 class="title"> Projects</h1>
+    </div>
+    <div class="project">
+      <div class="slider-wrapper">
+        <h1 class="section__text__p2">Active Fin-Controlled Rocket</h1>
+        <div class="slider">
+          <img id="slide-1-1" src="assets/rocket-cad.png" style="width: 50%;"/>
+          <img id="slide-1-2" src="assets/profile-pic.png"/>
+          <img id="slide-1-3" src="assets/profile-pic.png"/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1-1"></a>
+          <a href="#slide-1-2"></a>
+          <a href="#slide-1-3"></a>
+        </div>
+      </div>
+      <p class="slider-description">
+        Developed embedded quaternion-based attitude estimation using integrated gyro measurements (dead reckoning) 
+        Designing custom actuators to control aft fins used to aerodynamically stabilize rocket's yaw, pitch, and roll  
+        Currently ongoing assembly, integration, and ground testing
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="slider-wrapper">
+        <h1 class="section__text__p2">Optimal State-Space Control for Inverted Pendulum</h1>
+        <div class="slider">
+          <img id="slide-2-1" src="assets/profile-pic.png"/>
+          <img id="slide-2-2" src="assets/profile-pic.png"/>
+          <img id="slide-2-3" src="assets/profile-pic.png"/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-2-1"></a>
+          <a href="#slide-2-2"></a>
+          <a href="#slide-2-3"></a>
+        </div>
+      </div>
+      <p class="slider-description">
+        Designed and built an inverted pendulum benchmark system to implement state space control methods  
+        Performed linearization of the nonlinear equations of motion for the cart-pole system 
+        Implemented Full-State Feedback with Linear Quadratic Regulator (LQR) to stabilize pendulum at its vertical equilibrium 
+        System modelling and simulation performed with MATLAB, and the control law was implemented in C++
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="slider-wrapper">
+        <h1 class="section__text__p2">Bi-copter Attitude Stabilization</h1>
+        <div class="slider">
+          <img id="slide-3-1" src="assets/profile-pic.png"/>
+          <img id="slide-3-2" src="assets/profile-pic.png"/>
+          <img id="slide-3-3" src="assets/profile-pic.png"/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-3-1"></a>
+          <a href="#slide-3-2"></a>
+          <a href="#slide-3-3"></a>
+        </div>
+      </div>
+      <p class="slider-description">
+        Rigid body dynamics of a bi-modal drone simulated in MATLAB and SIMULINK using Euler Angle attitude representation 
+        Attitude integrated in time using Runge-Kutta numerical integration of the Euler Angle kinematic differential equations 
+        Successful attitude stabilization by coupled PID controllers for yaw, pitch, and roll controlling rotor thrust vector angles 
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="slider-wrapper">
+        <h1 class="section__text__p2">2D Compressible Euler Equation CFD Solver</h1>
+        <div class="slider">
+          <img id="slide-1" src="assets/profile-pic.png"/>
+          <img id="slide-2" src="assets/profile-pic.png"/>
+          <img id="slide-3" src="assets/profile-pic.png"/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+      <p class="slider-description">
+        Programmed a CFD solver for the inviscid 2D Euler equations using a finite volume Lax Friedrich scheme with a Runge-Kutta 2 time integration from scratch 
+        using Python 
+        Problem formulation consisted of airflow around an inclined flat plate given a variable angle of attack  
+        The plate was discretized by a line-drawing algorithm used to define impermeable wall boundary conditions for each 
+        grid cell making up the plate 
+      </p>
+    </div>
+    
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
