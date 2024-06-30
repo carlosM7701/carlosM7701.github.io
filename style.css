@@ -31,9 +31,10 @@ nav, .nav-links{
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height:17vh 
+  height: 17vh;
+  margin: 0 5vw;
 }
 
 .nav-links {
@@ -166,14 +167,26 @@ section{
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 33vw;
+  width: 33vw;
   margin: auto 0;
+  overflow: hidden;
 }
+
+.section__pic-container img{
+  object-fit: cover;
+}
+
 
 .section__text {
   align-self: center;
+  text-align: center;
+}
+
+#intro-section {
+  align-self: center;
   text-align: left;
+  width: 33vw;
 }
 
 .section__text p {
@@ -186,8 +199,7 @@ section{
 }
 
 .title {
-  font-size: 3rem;
-  text-align: center;
+  font-size: 2.4rem;
 }
 
 /* buttons */
@@ -208,6 +220,7 @@ section{
 
 .btn-color-1{
   border: rgb(53, 53, 53) 0.1rem solid;
+  margin-top: 2rem;
 }
 
 .btn-color-1:hover{
@@ -250,7 +263,7 @@ section{
   border-radius: 0.5rem; 
 }
 
-.slider img {
+.slider img, .slider iframe {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
