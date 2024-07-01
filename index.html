@@ -39,7 +39,10 @@
     </div>
     <div id="intro-section">
       <h1 class="title" id="main-title"> Carlos Morales</h1>
-      <p class="section__text__p2">Mechanical Engineer</p>
+      <p class="section__text__p2">Mechanical Engineer,</p>
+      <p class="section__text__p2">Passionate for Dynamics and Controls.</p>
+      <h2>Purpose</h1>
+      <p class="section__text__p2">I am excited for the opportunity to contribute to ongoing work within aerospace controls, and I am confident that my experiences have prepared me to do so. Whether it's working on the guidance and control of spacecraft, or autonomous vehicle trajectory tracking, my goal is to help broaden the scope of the places we can navigate, allowing humanity to explore and take charge of the most difficult environments on Earth and beyond.</p>
       <div class="btn-container">
         <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')"> Resume</button>
       </div>
@@ -54,7 +57,10 @@
         <h1 class="section__text__p2">Active Fin-Controlled Rocket</h1>
         <div class="slider">
           <img id="slide-1-1" src="assets/rocket-cad.png" style="width: 50%;"/>
-          <iframe  id="slide-1-2" src="https://www.youtube.com/embed/yArZBXw1bVw?autoplay=1&loop=1&playlist=yArZBXw1bVw&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!-- <iframe  id="slide-1-2" src="https://www.youtube.com/embed/yArZBXw1bVw?autoplay=1&loop=1&playlist=yArZBXw1bVw&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <video id="slide-1-2" autoplay loop muted style="width: 25%;">
+            <source src="assets/quat.mov" type="video/mp4">
+          </video>
           <img id="slide-1-3" src="assets/rocket-pic.png" style="width: 50%;"/>
           <!-- <img id="slide-1-3" src="assets/profile-pic.png" style="width: 50%;"/> -->
           
@@ -77,9 +83,14 @@
         <h1 class="section__text__p2">Optimal State-Space Control for Inverted Pendulum</h1>
         <div class="slider">
           <!-- <img id="slide-2-1" src="assets/profile-pic.png"/> -->
-          <iframe  id="slide-2-1" src="https://www.youtube.com/embed/x8M27gKX7cU?autoplay=1&loop=1&playlist=x8M27gKX7cU&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <img id="slide-2-2" src="assets/profile-pic.png"/>
-          <img id="slide-2-3" src="assets/profile-pic.png"/>
+          <!-- <iframe  id="slide-2-1" src="https://www.youtube.com/embed/x8M27gKX7cU?autoplay=1&loop=1&playlist=x8M27gKX7cU&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+          <video id="slide-2-1" autoplay loop muted style="width: 25%;">
+            <source src="assets/pend.MOV" type="video/mp4">
+          </video>
+          <video id="slide-2-2" autoplay loop muted style="width: 25%;">
+            <source src="assets/pend-sim.mov" type="video/mp4">
+          </video>
+          <img id="slide-2-3" src="assets/pend-sim-graph.png" style="width: 50%;"/>
         </div>
         <div class="slider-nav">
           <a href="#slide-2-1"></a>
@@ -100,8 +111,8 @@
         <h1 class="section__text__p2">2D Compressible Euler Equation CFD Solver</h1>
         <div class="slider">
           <img id="slide-1" src="assets/cfd-gif.gif" style="width: 50%;"/>
-          <img id="slide-2" src="assets/profile-pic.png"/>
-          <img id="slide-3" src="assets/profile-pic.png"/>
+          <img id="slide-2" src="assets/method1.png" style="width: 50%;"/>
+          <img id="slide-3" src="assets/method2.png" style="width: 50%;"/>
         </div>
         <div class="slider-nav">
           <a href="#slide-1"></a>
@@ -122,14 +133,39 @@
       <div class="slider-wrapper">
         <h1 class="section__text__p2">Bi-copter Attitude Stabilization</h1>
         <div class="slider">
-          <img id="slide-3-1" src="assets/profile-pic.png"/>
-          <img id="slide-3-2" src="assets/profile-pic.png"/>
-          <img id="slide-3-3" src="assets/profile-pic.png"/>
+          <img id="slide-3-1" src="assets/control-model.png" style="width: 50%;"/>
+          <img id="slide-3-2" src="assets/sim-results.png" style="width: 50%;"/>
+          <video id="slide-3-3" autoplay loop muted style="width: 25%;">
+            <source src="assets/attitude-response.mov" type="video/mp4">
+          </video>
         </div>
         <div class="slider-nav">
           <a href="#slide-3-1"></a>
           <a href="#slide-3-2"></a>
           <a href="#slide-3-3"></a>
+        </div>
+      </div>
+      <p class="slider-description">
+        Rigid body dynamics of a bi-modal drone simulated in MATLAB and SIMULINK using Euler Angle attitude representation 
+        Attitude integrated in time using Runge-Kutta numerical integration of the Euler Angle kinematic differential equations 
+        Successful attitude stabilization by coupled PID controllers for yaw, pitch, and roll controlling rotor thrust vector angles 
+      </p>
+    </div>
+
+    <div class="project">
+      <div class="slider-wrapper">
+        <h1 class="section__text__p2">VEX Robotics</h1>
+        <div class="slider">
+          <video id="slide-4-1" autoplay loop muted style="width: 25%;">
+            <source src="assets/robot.mp4" type="video/mp4">
+          </video>
+          <img id="slide-4-2" src="assets/kalahari.jpg" style="width: 50%;"/>
+          <img id="slide-4-3" src="assets/tt-robot.jpg" style="width: 50%;"/>
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-4-1"></a>
+          <a href="#slide-4-2"></a>
+          <a href="#slide-4-3"></a>
         </div>
       </div>
       <p class="slider-description">

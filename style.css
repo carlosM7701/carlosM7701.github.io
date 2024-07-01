@@ -177,7 +177,6 @@ section{
   object-fit: cover;
 }
 
-
 .section__text {
   align-self: center;
   text-align: center;
@@ -263,7 +262,7 @@ section{
   border-radius: 0.5rem; 
 }
 
-.slider img, .slider iframe {
+.slider img, .slider iframe, .slider video {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
