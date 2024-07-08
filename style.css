@@ -250,6 +250,7 @@ section{
   position:relative;
   max-width: 48rem;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .slider {
@@ -280,16 +281,19 @@ section{
 }
 
 .slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #787373;
+  border: 2px solid #fff;
   opacity: 0.75;
   transform: opacity ease 250ms;
 }
 
 .slider-nav a:hover {
+  background-color: black;
   opacity: 1;
+
 }
 
 .slider-description {

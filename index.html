@@ -35,7 +35,7 @@
   </nav>
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/profile-pic.png" alt="Carlos Morales profile picture">
+      <img src="./assets/profile-pic.jpeg" style="width: 100%;">
     </div>
     <div id="intro-section">
       <h1 class="title" id="main-title"> Carlos Morales</h1>
@@ -44,7 +44,7 @@
       <h2>Purpose</h1>
       <p class="section__text__p2">I am excited for the opportunity to contribute to ongoing work within aerospace controls, and I am confident that my experiences have prepared me to do so. Whether it's working on the guidance and control of spacecraft, or autonomous vehicle trajectory tracking, my goal is to help broaden the scope of the places we can navigate, allowing humanity to explore and take charge of the most difficult environments on Earth and beyond.</p>
       <div class="btn-container">
-        <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')"> Resume</button>
+        <button class="btn btn-color-1" onclick="window.open('./assets/Carlos Morales Resume.pdf')"> Resume</button>
       </div>
     </div>
   </section>
@@ -54,10 +54,10 @@
     </div>
     <div class="project">
       <div class="slider-wrapper">
-        <h1 class="section__text__p2">Active Fin-Controlled Rocket</h1>
+        <h1 class="section__text__p2">Active Fin-Controlled Rocket (Ongoing) </h1>
         <div class="slider">
           <img id="slide-1-1" src="assets/rocket-cad.png" style="width: 50%;"/>
-          <iframe  id="slide-1-2" src="https://www.youtube.com/embed/yArZBXw1bVw?autoplay=1&loop=1&playlist=yArZBXw1bVw&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe  id="slide-1-2" src="https://www.youtube.com/embed/yArZBXw1bVw?controls=0&autoplay=1&loop=1&playlist=yArZBXw1bVw&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <!-- <video id="slide-1-2" autoplay loop muted style="width: 25%;">
             <source src="assets/quat.mov" type="video/mp4">
           </video> -->
@@ -75,9 +75,12 @@
         </div>
       </div>
       <p class="slider-description">
-        Developed embedded quaternion-based attitude estimation using integrated gyro measurements (dead reckoning) 
-        Designing custom actuators to control aft fins used to aerodynamically stabilize rocket's yaw, pitch, and roll  
-        Currently ongoing assembly, integration, and ground testing
+        This is the main project I am working on to apply my skills towards aerodynamic control. So far, I've developed an embedded 
+        quaternion-based attitude estimation algorithm using integrated gyro measurements (dead reckoning). Since rockets experience 
+        large amounts of acceleration, the assumptions made by traditional 9-DOF sensor fusion algorithms is broken. For this reason 
+        I've written my own attitude estimator by integration performed with a second order taylor expansion of the quaternion 
+        kinematic matrix exponential. I've also designed and manufactured custom actuators to control aft fins used to aerodynamically 
+        stabilize rocket's yaw, pitch, and roll. I am Currently undergoing assembly, integration, and ground testing of each subsystem.
       </p>
     </div>
 
@@ -86,7 +89,7 @@
         <h1 class="section__text__p2">Optimal State-Space Control for Inverted Pendulum</h1>
         <div class="slider">
           <!-- <img id="slide-2-1" src="assets/pend.gif" style="width: 50%;"/> -->
-          <iframe  id="slide-2-1" src="https://www.youtube.com/embed/x8M27gKX7cU?autoplay=1&loop=1&playlist=x8M27gKX7cU&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe  id="slide-2-1" src="https://www.youtube.com/embed/x8M27gKX7cU?controls=0&autoplay=1&loop=1&playlist=x8M27gKX7cU&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <!-- <video id="slide-2-1" autoplay loop muted style="width: 25%;">
             <source src="assets/pend.MOV" type="video/mp4">
           </video> -->
@@ -102,10 +105,10 @@
         </div>
       </div>
       <p class="slider-description">
-        Designed and built an inverted pendulum benchmark system to implement state space control methods  
-        Performed linearization of the nonlinear equations of motion for the cart-pole system 
-        Implemented Full-State Feedback with Linear Quadratic Regulator (LQR) to stabilize pendulum at its vertical equilibrium 
-        System modelling and simulation performed with MATLAB, and the control law was implemented in C++
+        Designed and built an inverted pendulum benchmark system to implement state space control methods.  
+        Performed linearization of the nonlinear equations of motion for the cart-pole system .
+        Implemented Full-State Feedback with Linear Quadratic Regulator (LQR) to stabilize pendulum at its vertical equilibrium.
+        System modelling and simulation performed with MATLAB, and the control law was implemented in C++.
       </p>
     </div>
 
@@ -125,10 +128,10 @@
       </div>
       <p class="slider-description">
         Programmed a CFD solver for the inviscid 2D Euler equations using a finite volume Lax Friedrich scheme with a Runge-Kutta 2 time integration from scratch 
-        using Python 
-        Problem formulation consisted of airflow around an inclined flat plate given a variable angle of attack  
+        using Python.
+        Problem formulation consisted of airflow around an inclined flat plate given a variable angle of attack.
         The plate was discretized by a line-drawing algorithm used to define impermeable wall boundary conditions for each 
-        grid cell making up the plate 
+        grid cell making up the plate. 
       </p>
     </div>
 
@@ -141,7 +144,7 @@
           <!-- <video id="slide-3-3" autoplay loop muted style="width: 25%;">
             <source src="assets/attitude-response.mov" type="video/mp4">
           </video> -->
-          <iframe  id="slide-3-3" src="https://www.youtube.com/embed/n7MPdlj6sFI?autoplay=1&loop=1&playlist=n7MPdlj6sFI&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><iframe  id="slide-2-1" src="https://www.youtube.com/embed/x8M27gKX7cU?autoplay=1&loop=1&playlist=x8M27gKX7cU&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe  id="slide-3-3" src="https://www.youtube.com/embed/n7MPdlj6sFI?controls=0&autoplay=1&loop=1&playlist=n7MPdlj6sFI&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="slider-nav">
           <a href="#slide-3-1"></a>
@@ -150,9 +153,9 @@
         </div>
       </div>
       <p class="slider-description">
-        Rigid body dynamics of a bi-modal drone simulated in MATLAB and SIMULINK using Euler Angle attitude representation 
-        Attitude integrated in time using Runge-Kutta numerical integration of the Euler Angle kinematic differential equations 
-        Successful attitude stabilization by coupled PID controllers for yaw, pitch, and roll controlling rotor thrust vector angles 
+        Rigid body dynamics of a bi-modal drone simulated in MATLAB and SIMULINK using Euler Angle attitude representation. 
+        Attitude integrated in time using Runge-Kutta numerical integration of the Euler Angle kinematic differential equations.
+        Successful attitude stabilization by coupled PID controllers for yaw, pitch, and roll controlling rotor thrust vector angles. 
       </p>
     </div>
 
@@ -174,9 +177,11 @@
         </div>
       </div>
       <p class="slider-description">
-        Rigid body dynamics of a bi-modal drone simulated in MATLAB and SIMULINK using Euler Angle attitude representation 
-        Attitude integrated in time using Runge-Kutta numerical integration of the Euler Angle kinematic differential equations 
-        Successful attitude stabilization by coupled PID controllers for yaw, pitch, and roll controlling rotor thrust vector angles 
+        Led an interdisciplinary team to develop highly successful electromechanical robots that competed at an international level for over four years. 
+        Implemented autonomous control systems for accurate motion control of both holonomic and non-holonomic drive trains using PID, Odometry Position Tracking, Pure Pursuit, and Motion Profiling.
+        Developed autonomous motion control libraries in C++ for incoming Purdue students to use the existing control algorithms we had already developed and tested.
+        World Championship 2018-2019 (Ranked 1st in Division, 1st in Operator Skills, Division Finalists).
+        Kalahari 2020 National Signature Event Tournament Champions.
       </p>
     </div>
 
