@@ -163,6 +163,7 @@ section{
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-bottom: 2rem;
 }
 
 .section__pic-container {
@@ -187,6 +188,7 @@ section{
   text-align: left;
   width: 33vw;
   height: 40vw;
+  align-content: center;
 }
 
 .section__text p {
@@ -207,7 +209,7 @@ section{
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0rem;
 }
 
 .btn {
@@ -220,7 +222,7 @@ section{
 
 .btn-color-1{
   border: rgb(53, 53, 53) 0.1rem solid;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .btn-color-1:hover{
@@ -240,6 +242,7 @@ section{
 /* projects */
 .projects {
   padding: 2rem;
+  height: auto;
 }
 
 .project {
@@ -301,3 +304,17 @@ section{
   margin-top: 10px;
 }
 
+/* contact info */
+#contact{
+  padding-bottom: 3rem;
+  height: auto;
+}
+.contact-info{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#contact .section__text__p2 {
+  margin-left: 1rem;
+}
