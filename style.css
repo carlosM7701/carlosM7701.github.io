@@ -164,6 +164,7 @@ section{
   gap: 5rem;
   height: 80vh;
   margin-bottom: 2rem;
+  align-content: center;
 }
 
 .section__pic-container {
@@ -185,11 +186,11 @@ section{
 
 #intro-section {
   align-self: center;
+  align-items: center;
   text-align: left;
   width: 33vw;
-  height: 40vw;
-  align-content: center;
 }
+
 
 .section__text p {
   font-weight: 600;
